@@ -6,7 +6,7 @@
 	# @return [Float] значение в градусах Фаренгейта
 	def self.celsius_to_farenheit(celsius)
 		result = ((celsius * 1.8)+32);
-		puts "цельсий в фаренгей #{result.round(2)}";
+			puts "цельсий в фаренгейт #{result.round(2)}";
 		result # возвращаем значение для тестов
 	end;
 
@@ -16,7 +16,7 @@
 	# @return [Float] значение в градусах Цельсия
 	def self.farenheit_to_celsius(farenheit)
 		result = ((farenheit - 32) * 5.0/9);
-                puts "фаренгейт в цельсий #{result.round(2)}";
+    	puts "фаренгейт в цельсий #{result.round(2)}";
 		result # возвращаем значение для тестов
 	end;
 end;

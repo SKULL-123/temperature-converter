@@ -4,22 +4,22 @@ RSpec.describe TemperatureConverter do
   describe '.celsius_to_farenheit' do
     it 'выводит правильное значение для 0°C' do
       expect { TemperatureConverter.celsius_to_farenheit(0) }
-        .to output("цельсий в фаренгей 32.0\n").to_stdout
+        .to output("цельсий в фаренгейт 32.0\n").to_stdout
     end
 
     it 'выводит правильное значение для 100°C' do
       expect { TemperatureConverter.celsius_to_farenheit(100) }
-        .to output("цельсий в фаренгей 212.0\n").to_stdout
+        .to output("цельсий в фаренгейт 212.0\n").to_stdout
     end
 
     it 'выводит правильное значение для дробных чисел' do
       expect { TemperatureConverter.celsius_to_farenheit(36.6) }
-        .to output("цельсий в фаренгей 97.88\n").to_stdout
+        .to output("цельсий в фаренгейт 97.88\n").to_stdout
     end
 
     it 'выводит правильное значение для отрицательных чисел' do
 	expect { TemperatureConverter.celsius_to_farenheit(-40) }
-       	.to output("цельсий в фаренгей -40.0\n").to_stdout
+       	.to output("цельсий в фаренгейт -40.0\n").to_stdout
     end
   end
 
